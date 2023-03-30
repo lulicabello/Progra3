@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ST Detalle de Peliculas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body class="contenedor-ppal">
+    <header class="encabezado">
+        <nav class="computer">
+            <div>
+                <ul class="navegador">
+                    <li class="comp-nav" id="alinear-foto">
+                        <a href="home.html">
+                            <img src="logo/logo.jpeg" alt="Logo StreamTime"  class="logo"  id="logo">
+                        </a>
+                    </li>
+                    <li class="comp-nav">
+                        <a href="home.html">INICIO</a>
+                    </li>
+                    <li class="comp-nav">
+                        <a href="generos.html">GENEROS</a>
+                    </li>
+                    <li class="comp-nav">
+                        <a href="fav.html">TUS FAVORITOS</a>
+                    </li>
+                    <form class="buscador" action="resultados.html" method="GET"><button type="submit"><i class="fas fa-search"></i></button>
+                        <input class="campo-buscar" type="buscador" name="buscador" placeholder="BUSCAR" value="">
+                    </form>
+                </ul>
+            </div>
+        </nav>
+        <nav class="phone">          
+                <div>
+                     <ul class="phone-header">
+                            <li><a href="home.html" class="nav-phone">Inicio</a></li>
+                            <li><a href="fav.html" class="nav-phone">Mis Favoritos</a></li>
+                            <li><a href="generos.html" class="nav-phone">Generos</a></li>
+                    </ul>           
+                </div>
+            <form class="input" action="resultados.html" method="GET">
+                <input class="buscador" type="buscador" name="buscador" placeholder="BUSCAR" value="">
+            </form>
+        </nav>
+    </header> 
+    <main class="mainclase">
+    </main>
+    <footer class="formato">
+        <hr class="uk-divider-icon"> 
+        </hr>
+        <article class= "tmdb">
+            <img  src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_1-8ba2ac31f354005783fab473602c34c3f4fd207150182061e425d366e4f34596.svg" alt="TMDBLogo">                  
+        </article>
+        </div>
+        <h3 class="integrantes">
+            Emilia Tarascio, Nour Awada y Valentina Douce
+        </h3>
+    </footer>
+    <script src="js/detalle-peliculas.js"></script>
+    <script src="js/buscador-general.js"></script>
+</body>
+</html>

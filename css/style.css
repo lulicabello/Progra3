@@ -1,0 +1,337 @@
+/*config ppal*/
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+li {
+    list-style: none;
+}
+
+ul,
+ol {
+    margin: 0;
+    padding: 0%;
+}
+
+i {
+    color: white;
+}
+p {
+    color: white;
+    text-align: center;
+}
+section{
+    color: white;
+    height: 100%;
+}
+i{
+    color: black;
+}
+
+
+/*GENERALES*/
+body {
+    background-color: black;
+    font-family: IBM Plex Sans Arabic;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+
+/*logo*/
+header .logo {
+    border-radius: 50%;
+    width: 10%;
+    border: 3px solid black;
+}
+
+
+/*HEADER*/
+.encabezado {
+    background-color: rgb(44, 7, 53);
+}
+
+.computer {
+    display: none;
+}
+
+.phone {
+    display: flex;
+    align-items: center;
+}
+
+.phone-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.phone-header a:hover{
+    color:black ;
+}
+
+nav.phone {
+    width: 100%;
+}
+
+.nav-phone {
+    padding: 0 10px;
+}
+
+.buscador {
+    width: 95%;
+}
+
+.input {
+    width: 115px;
+}
+
+.menu {
+    border: none;
+}
+
+/*FOOTER*/
+
+.integrantes {
+    text-align: center;
+    color: white;
+    margin-top: 5px;
+    padding-bottom: 15px;
+}
+
+.social-links {
+    color: grey;
+}
+
+.formato .footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.tmdb{
+    margin: 0% 35%;
+    width: 30%;
+}
+
+/*VALEN*/ 
+/*MAIN*/
+.titulos {
+    color: white;
+    text-align: center;
+}
+
+.pelis-populares, .series-populares, .mas-visto{
+    display: flex;
+    flex-direction: row;
+    flex-direction: wrap;
+    width: 100%;
+    list-style: none;
+}
+article{
+    padding: 0% 1%;
+    width: 15%;
+}
+
+li {
+    padding: 0 1%;
+}
+/*Buscador*/
+.resultado-error{
+    color: white;
+    text-align: center;
+    text-decoration: solid;
+}
+section.pelis-populares, .series-populares, .mas-visto {
+    justify-content: center;
+}
+
+/*NOUR*/
+/*DETALLES*/
+.h1detalles {
+    color: white;
+    text-align: center;
+}
+.hdetalles {
+    color: white;
+}
+.div2{
+    width: 50%;
+    margin:0 auto;
+    margin-bottom: 20px;
+    
+}
+.imgclase{
+    display: block;
+    width: 100%; 
+}
+/*GENEROS*/
+.noursection{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.generosclase{
+    background-color: rgb(113, 36, 127);
+    text-align: center;
+    width: 160px;
+    height:50px;
+    margin-bottom: 10px;
+    border-radius: 7%;
+    
+}
+.noursection a:hover{
+    color: rgba(255, 255, 255, 0.5);
+}
+/*DETALLE DE GENEROS*/
+.h1generos{
+    color: white;
+    margin-left: 40px;
+}
+.uldetallegenero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+    align-items: center;
+}
+.imgh{
+    width: 100%; 
+}
+.h1dgenero{
+    color: white;
+    margin-left: 35px;
+}
+.h2dgenero{
+    color: white;
+    margin-left: 35px;
+    text-decoration: none;
+    text-align: center;
+}
+.h3clase{
+    color: white;
+}
+/*FAVORITOS*/
+.contenedor-favoritos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    list-style: none;
+}
+
+.titulo-fav {
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+li.items-fav {
+    padding: 0 5%;
+    
+}
+
+img.imghome {
+    width: 100%;
+  
+}
+
+/* EMILIA */
+/* resultados */
+
+
+#busqueda h1 {
+    color: white;
+    margin-left: 35px;
+}
+
+#busqueda2 h1, #busqueda2 h2 {
+    color: white;
+    margin-left: 35px;
+}
+
+#busqueda2 {
+    display: none;
+}
+
+.resultados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.resultados li {
+    width: 18%;
+    margin-bottom: 50px;
+}
+
+.resultados li img {
+    width: 100%
+}
+
+
+
+
+
+@media (min-width:720px) {
+    nav.computer {
+        display: block;
+        width: 100%;
+    }
+
+    .phone {
+        display: none;
+    }
+
+    /*header*/
+    .navegador a:hover {
+        color: black;
+    }
+
+    .navegador {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 18px;
+        font-weight: bolder;
+        max-height: 80px;
+    }
+
+    .comp-nav {
+        padding: 0 10px;
+        width: 10%;
+        padding-top: 20px;
+        max-height: 10%;
+    }
+
+    #logo {
+        width: 70%;
+    }
+
+    .buscador {
+        padding-top: 20px;
+        width: 25%;
+    }
+
+    #alinear-foto {
+        padding-top: 5px;
+    }
+    .div2{
+        width: 20%;
+    }
+    .generosclase{
+        width: 320px;
+        height: 100px;
+        font-size: 25px;
+        
+    }
+
+
+
+}
